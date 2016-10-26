@@ -29,7 +29,7 @@ class CustomCollectionViewCell: UICollectionViewCell
         
         if boundss.size.width > 340
         {
-            self.nameLabel.frame=CGRectMake(0, ((boundss.size.width/2)-10), ((boundss.size.width/2)-10), 40)
+            self.nameLabel.frame=CGRectMake(0, ((boundss.size.width/2)-25), ((boundss.size.width/2)-10), 40)
             self.moduleIcon.frame=CGRectMake((((boundss.size.width-20)/2)-120)/2, 30, 120, 120)
         }
         else if boundss.size.width < 330
