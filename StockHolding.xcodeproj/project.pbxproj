@@ -15,6 +15,7 @@
 		0209FA5C1DC084A600AE1EDD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0209FA5A1DC084A600AE1EDD /* LaunchScreen.storyboard */; };
 		0209FA651DC09F1B00AE1EDD /* CustomCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0209FA631DC09F1B00AE1EDD /* CustomCollectionViewLayout.swift */; };
 		0209FA661DC09F1B00AE1EDD /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0209FA641DC09F1B00AE1EDD /* CustomCollectionViewCell.swift */; };
+		0209FA681DC0A06600AE1EDD /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0209FA671DC0A06600AE1EDD /* DashboardViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		0209FA5D1DC084A600AE1EDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0209FA631DC09F1B00AE1EDD /* CustomCollectionViewLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewLayout.swift; sourceTree = "<group>"; };
 		0209FA641DC09F1B00AE1EDD /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
+		0209FA671DC0A06600AE1EDD /* DashboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 			children = (
 				0209FA4E1DC084A600AE1EDD /* AppDelegate.swift */,
 				0209FA501DC084A600AE1EDD /* ViewController.swift */,
+				0209FA671DC0A06600AE1EDD /* DashboardViewController.swift */,
 				0209FA631DC09F1B00AE1EDD /* CustomCollectionViewLayout.swift */,
 				0209FA641DC09F1B00AE1EDD /* CustomCollectionViewCell.swift */,
 				0209FA521DC084A600AE1EDD /* Main.storyboard */,
@@ -145,6 +148,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0209FA511DC084A600AE1EDD /* ViewController.swift in Sources */,
+				0209FA681DC0A06600AE1EDD /* DashboardViewController.swift in Sources */,
 				0209FA661DC09F1B00AE1EDD /* CustomCollectionViewCell.swift in Sources */,
 				0209FA4F1DC084A600AE1EDD /* AppDelegate.swift in Sources */,
 				0209FA651DC09F1B00AE1EDD /* CustomCollectionViewLayout.swift in Sources */,
