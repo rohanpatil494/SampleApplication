@@ -40,11 +40,8 @@ class ViewController: UIViewController {
         //
         NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(ViewController.playerPlaybackDidFinish(_:)),
                                                          name: MPMoviePlayerPlaybackDidFinishNotification, object: nil)
-        
        // NSNotificationCenter.defaultCenter() .addObserver(self, selector: "movieOrientationChanged", name: UIDeviceOrientationDidChangeNotification, object: nil)
-        
     }
-    
     
     override func viewDidAppear(animated: Bool) {
         
