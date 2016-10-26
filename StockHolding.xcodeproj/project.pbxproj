@@ -25,7 +25,6 @@
 		0209FA7A1DC0C58400AE1EDD /* IPOViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0209FA791DC0C58400AE1EDD /* IPOViewController.swift */; };
 		0209FA7C1DC0C59900AE1EDD /* BondsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0209FA7B1DC0C59900AE1EDD /* BondsViewController.swift */; };
 		0209FA7E1DC0C5A300AE1EDD /* FDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0209FA7D1DC0C5A300AE1EDD /* FDViewController.swift */; };
-		0209FA801DC0CAF600AE1EDD /* video.mov in Resources */ = {isa = PBXBuildFile; fileRef = 0209FA7F1DC0CAF600AE1EDD /* video.mov */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,7 +48,6 @@
 		0209FA791DC0C58400AE1EDD /* IPOViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IPOViewController.swift; sourceTree = "<group>"; };
 		0209FA7B1DC0C59900AE1EDD /* BondsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BondsViewController.swift; sourceTree = "<group>"; };
 		0209FA7D1DC0C5A300AE1EDD /* FDViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FDViewController.swift; sourceTree = "<group>"; };
-		0209FA7F1DC0CAF600AE1EDD /* video.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = video.mov; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,7 +80,6 @@
 		0209FA4D1DC084A600AE1EDD /* StockHolding */ = {
 			isa = PBXGroup;
 			children = (
-				0209FA7F1DC0CAF600AE1EDD /* video.mov */,
 				0209FA781DC0C55B00AE1EDD /* IPOPageView */,
 				0209FA6B1DC0C0C800AE1EDD /* PageViewLib */,
 				0209FA4E1DC084A600AE1EDD /* AppDelegate.swift */,
@@ -180,7 +177,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0209FA801DC0CAF600AE1EDD /* video.mov in Resources */,
 				0209FA5C1DC084A600AE1EDD /* LaunchScreen.storyboard in Resources */,
 				0209FA591DC084A600AE1EDD /* Assets.xcassets in Resources */,
 				0209FA541DC084A600AE1EDD /* Main.storyboard in Resources */,
