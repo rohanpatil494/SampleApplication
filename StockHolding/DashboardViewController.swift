@@ -77,6 +77,11 @@ class DashboardViewController: UIViewController {
             //timer.fire()
             
         }
+        else if indexPath.row == 3
+        {
+            let IPOBondsFDController = self.storyboard?.instantiateViewControllerWithIdentifier("IPOBondsFD_View") as! IOPBondsFDController
+            self.navigationController?.pushViewController(IPOBondsFDController, animated: true)
+        }
         else
         {
 //            let RedeemptionViewController = self.storyboard?.instantiateViewControllerWithIdentifier("redumption_view") as! RedumptionStatusController
