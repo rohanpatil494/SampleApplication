@@ -17,7 +17,7 @@ class DashboardViewController: UIViewController {
     @IBOutlet weak var indicator: UIActivityIndicatorView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        //
         createNavigationBar()
     }
     
