@@ -16,6 +16,12 @@
 		0209FA651DC09F1B00AE1EDD /* CustomCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0209FA631DC09F1B00AE1EDD /* CustomCollectionViewLayout.swift */; };
 		0209FA661DC09F1B00AE1EDD /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0209FA641DC09F1B00AE1EDD /* CustomCollectionViewCell.swift */; };
 		0209FA681DC0A06600AE1EDD /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0209FA671DC0A06600AE1EDD /* DashboardViewController.swift */; };
+		8BEFDFB41DC0B6C6009BCF08 /* Back.png in Resources */ = {isa = PBXBuildFile; fileRef = 8BEFDFB31DC0B6C6009BCF08 /* Back.png */; };
+		8BEFDFB61DC0BAB7009BCF08 /* facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = 8BEFDFB51DC0BAB7009BCF08 /* facebook.png */; };
+		8BEFDFB81DC0BD66009BCF08 /* GooglePlus.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 8BEFDFB71DC0BD66009BCF08 /* GooglePlus.jpeg */; };
+		8BEFDFBA1DC0C00E009BCF08 /* google-plus.png in Resources */ = {isa = PBXBuildFile; fileRef = 8BEFDFB91DC0C00E009BCF08 /* google-plus.png */; };
+		8BEFDFBC1DC0C0D9009BCF08 /* twitter.png in Resources */ = {isa = PBXBuildFile; fileRef = 8BEFDFBB1DC0C0D9009BCF08 /* twitter.png */; };
+		8BEFDFBE1DC0C7E6009BCF08 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BEFDFBD1DC0C7E6009BCF08 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +36,12 @@
 		0209FA631DC09F1B00AE1EDD /* CustomCollectionViewLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewLayout.swift; sourceTree = "<group>"; };
 		0209FA641DC09F1B00AE1EDD /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
 		0209FA671DC0A06600AE1EDD /* DashboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		8BEFDFB31DC0B6C6009BCF08 /* Back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Back.png; sourceTree = "<group>"; };
+		8BEFDFB51DC0BAB7009BCF08 /* facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facebook.png; sourceTree = "<group>"; };
+		8BEFDFB71DC0BD66009BCF08 /* GooglePlus.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = GooglePlus.jpeg; sourceTree = "<group>"; };
+		8BEFDFB91DC0C00E009BCF08 /* google-plus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "google-plus.png"; sourceTree = "<group>"; };
+		8BEFDFBB1DC0C0D9009BCF08 /* twitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twitter.png; sourceTree = "<group>"; };
+		8BEFDFBD1DC0C7E6009BCF08 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +74,13 @@
 		0209FA4D1DC084A600AE1EDD /* StockHolding */ = {
 			isa = PBXGroup;
 			children = (
+				8BEFDFBB1DC0C0D9009BCF08 /* twitter.png */,
+				8BEFDFB91DC0C00E009BCF08 /* google-plus.png */,
+				8BEFDFB71DC0BD66009BCF08 /* GooglePlus.jpeg */,
+				8BEFDFB51DC0BAB7009BCF08 /* facebook.png */,
+				8BEFDFB31DC0B6C6009BCF08 /* Back.png */,
 				0209FA4E1DC084A600AE1EDD /* AppDelegate.swift */,
+				8BEFDFBD1DC0C7E6009BCF08 /* LoginViewController.swift */,
 				0209FA501DC084A600AE1EDD /* ViewController.swift */,
 				0209FA671DC0A06600AE1EDD /* DashboardViewController.swift */,
 				0209FA631DC09F1B00AE1EDD /* CustomCollectionViewLayout.swift */,
@@ -134,7 +152,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BEFDFB41DC0B6C6009BCF08 /* Back.png in Resources */,
+				8BEFDFBC1DC0C0D9009BCF08 /* twitter.png in Resources */,
+				8BEFDFBA1DC0C00E009BCF08 /* google-plus.png in Resources */,
 				0209FA5C1DC084A600AE1EDD /* LaunchScreen.storyboard in Resources */,
+				8BEFDFB81DC0BD66009BCF08 /* GooglePlus.jpeg in Resources */,
+				8BEFDFB61DC0BAB7009BCF08 /* facebook.png in Resources */,
 				0209FA591DC084A600AE1EDD /* Assets.xcassets in Resources */,
 				0209FA541DC084A600AE1EDD /* Main.storyboard in Resources */,
 			);
@@ -147,6 +170,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BEFDFBE1DC0C7E6009BCF08 /* LoginViewController.swift in Sources */,
 				0209FA511DC084A600AE1EDD /* ViewController.swift in Sources */,
 				0209FA681DC0A06600AE1EDD /* DashboardViewController.swift in Sources */,
 				0209FA661DC09F1B00AE1EDD /* CustomCollectionViewCell.swift in Sources */,
@@ -304,6 +328,7 @@
 				0209FA621DC084A600AE1EDD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
