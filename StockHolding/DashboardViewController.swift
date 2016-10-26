@@ -46,7 +46,7 @@ class DashboardViewController: UIViewController {
         //cell.moduleIcon.image = UIImage(named: imagesArray[indexPath.row])
         cell.moduleIcon.backgroundColor = UIColor.blueColor()
         cell.nameLabel.text = titleArray[indexPath.row]
-        
+        //
         
         return cell
     }

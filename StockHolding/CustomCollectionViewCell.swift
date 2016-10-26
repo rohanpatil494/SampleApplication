@@ -15,7 +15,7 @@ class CustomCollectionViewCell: UICollectionViewCell
     @IBOutlet var nameLabel: UILabel!
     let boundss = UIScreen.mainScreen().bounds
     //var moduleStaticRef:NSString!
-    //var moduleId:NSString!
+    //var moduleId:NSString!//
    
     override func awakeFromNib() {
         super.awakeFromNib()

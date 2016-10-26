@@ -37,7 +37,7 @@ class ViewController: UIViewController {
         //       NSNotificationCenter.defaultCenter().addObserver(self, selector: "rotated", name: UIDeviceOrientationDidChangeNotification, object: nil)
         
        // NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: "updatePlaybackTime:", userInfo: nil, repeats: true)
-        
+        //
         NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(ViewController.playerPlaybackDidFinish(_:)),
                                                          name: MPMoviePlayerPlaybackDidFinishNotification, object: nil)
         

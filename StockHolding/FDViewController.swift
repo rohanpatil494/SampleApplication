@@ -11,7 +11,7 @@ import UIKit
 class FDViewController: UIViewController {
     let bounds = UIScreen.mainScreen().bounds
     override func viewDidLoad() {
-        super.viewDidLoad()
+        super.viewDidLoad()//
         
         createNavigationBar()
         

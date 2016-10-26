@@ -25,7 +25,7 @@ class IOPBondsFDController: UIViewController {
         let titles = setChildVcs().map { $0.title! }
         
         let scroll = ScrollPageView(frame: CGRect(x: 0, y: 64, width: view.bounds.size.width, height: view.bounds.size.height - 64), segmentStyle: style, titles: titles, childVcs: setChildVcs(), parentViewController: self)
-        view.addSubview(scroll)
+        view.addSubview(scroll)//
     }
     
     func createNavigationBar(){

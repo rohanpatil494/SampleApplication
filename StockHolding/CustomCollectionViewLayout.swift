@@ -20,7 +20,7 @@ class CustomCollectionViewLayout: UICollectionViewFlowLayout {
     // var custcl:CustomCollectionViewCell!
     override init() {
         super.init()
-        setup()
+        setup()//
     }
     
     required init(coder aDecoder: NSCoder) {
