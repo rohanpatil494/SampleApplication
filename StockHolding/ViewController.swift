@@ -69,7 +69,7 @@ class ViewController: UIViewController {
     
     func playerPlaybackDidFinish(notification:NSNotification)
     {
-        NSNotificationCenter.defaultCenter().removeObserver(self)
+        //NSNotificationCenter.defaultCenter().removeObserver(self)
         moviePlayer.prepareToPlay()
         moviePlayer.play()
     }
