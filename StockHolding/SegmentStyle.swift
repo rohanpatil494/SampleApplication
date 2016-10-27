@@ -72,18 +72,18 @@ public struct SegmentStyle {
     public var scrollLineHeight: CGFloat = 4
     public var scrollLineColor = UIColor.whiteColor()
     
-    public var coverBackgroundColor = UIColor.blueColor()
+    public var coverBackgroundColor = UIColor.whiteColor()
     public var coverCornerRadius = 14.0
     
     public var coverHeight: CGFloat = 28.0
     public var titleMargin: CGFloat = 15
-    public var titleFont = UIFont.systemFontOfSize(14.0)
+    public var titleFont = UIFont.systemFontOfSize(16.0)
     
     public var titleBigScale: CGFloat = 1.3
     let titleOriginalScale: CGFloat = 1.0
     
     public var normalTitleColor = UIColor.lightGrayColor()//(red: 51.0/255.0, green: 53.0/255.0, blue: 75/255.0, alpha: 1.0)
-    public var selectedTitleColor = UIColor.whiteColor()//(red: 255.0/255.0, green: 0.0/255.0, blue: 121/255.0, alpha: 1.0)
+    public var selectedTitleColor = UIColor.blackColor()//(red: 255.0/255.0, green: 0.0/255.0, blue: 121/255.0, alpha: 1.0)
     
     public init() {
         

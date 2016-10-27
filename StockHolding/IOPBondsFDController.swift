@@ -63,9 +63,9 @@ class IOPBondsFDController: UIViewController {
         }
         else if bounds.size.width == 375
         {
-            IPO.title    = "IPO                   "
-            Bonds.title =  "Bonds                 "
-            FD.title =     "Fix Deposit           "
+            IPO.title    = "IPO                "
+            Bonds.title =  "Bonds              "
+            FD.title =     "Fix Deposit        "
         }
         else
         {

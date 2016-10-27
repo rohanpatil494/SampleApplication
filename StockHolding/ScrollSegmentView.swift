@@ -261,7 +261,7 @@ extension ScrollSegmentView {
             labelsArray.append(label)
             scrollView.addSubview(label)
             
-            scrollView.backgroundColor = UIColor(red: 64/255.0, green: 135/255.0, blue: 202/255.0, alpha: 1.0)
+            scrollView.backgroundColor = UIColor.whiteColor()//(red: 64/255.0, green: 135/255.0, blue: 202/255.0, alpha: 1.0)
         }
     }
     
@@ -430,7 +430,7 @@ extension ScrollSegmentView {
             
             oldLabel.textColor = UIColor.lightGrayColor()//(red:selectedTitleColorRgb.r + rgbDelta.deltaR * progress, green: selectedTitleColorRgb.g + rgbDelta.deltaG * progress, blue: selectedTitleColorRgb.b + rgbDelta.deltaB * progress, alpha: 1.0)
             
-            currentLabel.textColor = UIColor.whiteColor()//(red: normalColorRgb.r - rgbDelta.deltaR * progress, green: normalColorRgb.g - rgbDelta.deltaG * progress, blue: normalColorRgb.b - rgbDelta.deltaB * progress, alpha: 1.0)
+            currentLabel.textColor = UIColor.blackColor()//(red: normalColorRgb.r - rgbDelta.deltaR * progress, green: normalColorRgb.g - rgbDelta.deltaG * progress, blue: normalColorRgb.b - rgbDelta.deltaB * progress, alpha: 1.0)
             
             
         }

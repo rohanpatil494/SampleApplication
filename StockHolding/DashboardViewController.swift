@@ -17,7 +17,6 @@ class DashboardViewController: UIViewController {
     @IBOutlet weak var indicator: UIActivityIndicatorView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        //
         createNavigationBar()
     }
     
@@ -28,8 +27,6 @@ class DashboardViewController: UIViewController {
         
         self.navigationController!.navigationBar.titleTextAttributes = [NSFontAttributeName: UIFont(name: "Helvetica", size: 22)! , NSForegroundColorAttributeName:UIColor.whiteColor()]
         self.navigationController?.navigationBar.barTintColor = UIColor(red: 0/255.0, green: 110/255.0, blue: 186/255.0, alpha: 1.0)
-        
-        
     }
     
     func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {

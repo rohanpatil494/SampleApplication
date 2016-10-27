@@ -283,6 +283,8 @@
                     <nil key="simulatedTopBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
+                        <outlet property="EmailField" destination="oqd-37-kCx" id="g6H-Hy-lb6"/>
+                        <outlet property="PasswordField" destination="ql5-hA-REy" id="iJ9-le-gp4"/>
                         <outlet property="loginBtn" destination="tfW-2i-War" id="miy-xN-I8q"/>
                     </connections>
                 </viewController>

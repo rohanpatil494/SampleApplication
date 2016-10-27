@@ -19,6 +19,7 @@
 		02CC35611DC1E99900C25017 /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = 02CC355E1DC1E99900C25017 /* back.png */; };
 		02CC35621DC1E99900C25017 /* back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 02CC355F1DC1E99900C25017 /* back@2x.png */; };
 		02CC35631DC1E99900C25017 /* back@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 02CC35601DC1E99900C25017 /* back@3x.png */; };
+		02CC35691DC2082100C25017 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 02CC35681DC2082100C25017 /* icon.png */; };
 		8B6FF6A41DC1C90B00568144 /* IOPBondsFDController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B6FF6A31DC1C90B00568144 /* IOPBondsFDController.swift */; };
 		8B6FF6B41DC1C99100568144 /* BondsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B6FF6A51DC1C99100568144 /* BondsViewController.swift */; };
 		8B6FF6B51DC1C99100568144 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B6FF6A61DC1C99100568144 /* ContentView.swift */; };
@@ -58,6 +59,7 @@
 		02CC355E1DC1E99900C25017 /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
 		02CC355F1DC1E99900C25017 /* back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back@2x.png"; sourceTree = "<group>"; };
 		02CC35601DC1E99900C25017 /* back@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back@3x.png"; sourceTree = "<group>"; };
+		02CC35681DC2082100C25017 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		8B6FF6A31DC1C90B00568144 /* IOPBondsFDController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IOPBondsFDController.swift; sourceTree = "<group>"; };
 		8B6FF6A51DC1C99100568144 /* BondsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BondsViewController.swift; sourceTree = "<group>"; };
 		8B6FF6A61DC1C99100568144 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -112,16 +114,12 @@
 		0209FA4D1DC084A600AE1EDD /* StockHolding */ = {
 			isa = PBXGroup;
 			children = (
-				02CC355D1DC1E96600C25017 /* Icons_Images */,
+				02CC35641DC1F43C00C25017 /* AppDelegate */,
+				02CC35661DC1F47A00C25017 /* VideoView */,
+				02CC35651DC1F44B00C25017 /* LogIn */,
+				02CC35671DC1F49300C25017 /* DashBoard */,
 				02CC355C1DC1E93900C25017 /* PagingController */,
-				8B6FF6B31DC1C99100568144 /* video.mov */,
-				8BEFDFB31DC0B6C6009BCF08 /* Back.png */,
-				0209FA4E1DC084A600AE1EDD /* AppDelegate.swift */,
-				8BEFDFBD1DC0C7E6009BCF08 /* LoginViewController.swift */,
-				0209FA501DC084A600AE1EDD /* ViewController.swift */,
-				0209FA671DC0A06600AE1EDD /* DashboardViewController.swift */,
-				0209FA631DC09F1B00AE1EDD /* CustomCollectionViewLayout.swift */,
-				0209FA641DC09F1B00AE1EDD /* CustomCollectionViewCell.swift */,
+				02CC355D1DC1E96600C25017 /* Icons_Images_Video */,
 				0209FA521DC084A600AE1EDD /* Main.storyboard */,
 				0209FA581DC084A600AE1EDD /* Assets.xcassets */,
 				0209FA5A1DC084A600AE1EDD /* LaunchScreen.storyboard */,
@@ -147,9 +145,12 @@
 			name = PagingController;
 			sourceTree = "<group>";
 		};
-		02CC355D1DC1E96600C25017 /* Icons_Images */ = {
+		02CC355D1DC1E96600C25017 /* Icons_Images_Video */ = {
 			isa = PBXGroup;
 			children = (
+				02CC35681DC2082100C25017 /* icon.png */,
+				8B6FF6B31DC1C99100568144 /* video.mov */,
+				8BEFDFB31DC0B6C6009BCF08 /* Back.png */,
 				02CC355E1DC1E99900C25017 /* back.png */,
 				02CC355F1DC1E99900C25017 /* back@2x.png */,
 				02CC35601DC1E99900C25017 /* back@3x.png */,
@@ -164,7 +165,41 @@
 				8B6FF6AD1DC1C99100568144 /* nps.png */,
 				8B6FF6B11DC1C99100568144 /* services.png */,
 			);
-			name = Icons_Images;
+			name = Icons_Images_Video;
+			sourceTree = "<group>";
+		};
+		02CC35641DC1F43C00C25017 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				0209FA4E1DC084A600AE1EDD /* AppDelegate.swift */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		02CC35651DC1F44B00C25017 /* LogIn */ = {
+			isa = PBXGroup;
+			children = (
+				8BEFDFBD1DC0C7E6009BCF08 /* LoginViewController.swift */,
+			);
+			name = LogIn;
+			sourceTree = "<group>";
+		};
+		02CC35661DC1F47A00C25017 /* VideoView */ = {
+			isa = PBXGroup;
+			children = (
+				0209FA501DC084A600AE1EDD /* ViewController.swift */,
+			);
+			name = VideoView;
+			sourceTree = "<group>";
+		};
+		02CC35671DC1F49300C25017 /* DashBoard */ = {
+			isa = PBXGroup;
+			children = (
+				0209FA671DC0A06600AE1EDD /* DashboardViewController.swift */,
+				0209FA631DC09F1B00AE1EDD /* CustomCollectionViewLayout.swift */,
+				0209FA641DC09F1B00AE1EDD /* CustomCollectionViewCell.swift */,
+			);
+			name = DashBoard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,6 +273,7 @@
 				8B6FF6B91DC1C99100568144 /* ipo.png in Resources */,
 				8BEFDFB61DC0BAB7009BCF08 /* facebook.png in Resources */,
 				0209FA591DC084A600AE1EDD /* Assets.xcassets in Resources */,
+				02CC35691DC2082100C25017 /* icon.png in Resources */,
 				8B6FF6BC1DC1C99100568144 /* nps.png in Resources */,
 				8B6FF6B61DC1C99100568144 /* demat.png in Resources */,
 				02CC35611DC1E99900C25017 /* back.png in Resources */,
@@ -386,6 +422,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = StockHolding/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hgsinteractive.StockHolding;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -399,6 +436,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = StockHolding/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hgsinteractive.StockHolding;
 				PRODUCT_NAME = "$(TARGET_NAME)";
