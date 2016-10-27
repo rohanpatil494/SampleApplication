@@ -24,6 +24,7 @@ class LoginViewController: UIViewController
         super.viewDidLoad()
         loginBtn.layer.cornerRadius=5.0
         loginBtn.layer.masksToBounds=true
+        //changesrr
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
