@@ -16,6 +16,9 @@
 		0209FA651DC09F1B00AE1EDD /* CustomCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0209FA631DC09F1B00AE1EDD /* CustomCollectionViewLayout.swift */; };
 		0209FA661DC09F1B00AE1EDD /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0209FA641DC09F1B00AE1EDD /* CustomCollectionViewCell.swift */; };
 		0209FA681DC0A06600AE1EDD /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0209FA671DC0A06600AE1EDD /* DashboardViewController.swift */; };
+		02CC35611DC1E99900C25017 /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = 02CC355E1DC1E99900C25017 /* back.png */; };
+		02CC35621DC1E99900C25017 /* back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 02CC355F1DC1E99900C25017 /* back@2x.png */; };
+		02CC35631DC1E99900C25017 /* back@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 02CC35601DC1E99900C25017 /* back@3x.png */; };
 		8B6FF6A41DC1C90B00568144 /* IOPBondsFDController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B6FF6A31DC1C90B00568144 /* IOPBondsFDController.swift */; };
 		8B6FF6B41DC1C99100568144 /* BondsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B6FF6A51DC1C99100568144 /* BondsViewController.swift */; };
 		8B6FF6B51DC1C99100568144 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B6FF6A61DC1C99100568144 /* ContentView.swift */; };
@@ -52,6 +55,9 @@
 		0209FA631DC09F1B00AE1EDD /* CustomCollectionViewLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewLayout.swift; sourceTree = "<group>"; };
 		0209FA641DC09F1B00AE1EDD /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
 		0209FA671DC0A06600AE1EDD /* DashboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		02CC355E1DC1E99900C25017 /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
+		02CC355F1DC1E99900C25017 /* back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back@2x.png"; sourceTree = "<group>"; };
+		02CC35601DC1E99900C25017 /* back@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back@3x.png"; sourceTree = "<group>"; };
 		8B6FF6A31DC1C90B00568144 /* IOPBondsFDController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IOPBondsFDController.swift; sourceTree = "<group>"; };
 		8B6FF6A51DC1C99100568144 /* BondsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BondsViewController.swift; sourceTree = "<group>"; };
 		8B6FF6A61DC1C99100568144 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -106,27 +112,10 @@
 		0209FA4D1DC084A600AE1EDD /* StockHolding */ = {
 			isa = PBXGroup;
 			children = (
-				8B6FF6A51DC1C99100568144 /* BondsViewController.swift */,
-				8B6FF6A61DC1C99100568144 /* ContentView.swift */,
-				8B6FF6A71DC1C99100568144 /* demat.png */,
-				8B6FF6A81DC1C99100568144 /* FDViewController.swift */,
-				8B6FF6A91DC1C99100568144 /* gold_rush.png */,
-				8B6FF6AA1DC1C99100568144 /* ipo.png */,
-				8B6FF6AB1DC1C99100568144 /* IPOViewController.swift */,
-				8B6FF6AC1DC1C99100568144 /* mutual_fund.png */,
-				8B6FF6AD1DC1C99100568144 /* nps.png */,
-				8B6FF6AE1DC1C99100568144 /* ScrollPageView.swift */,
-				8B6FF6AF1DC1C99100568144 /* ScrollSegmentView.swift */,
-				8B6FF6B01DC1C99100568144 /* SegmentStyle.swift */,
-				8B6FF6B11DC1C99100568144 /* services.png */,
-				8B6FF6B21DC1C99100568144 /* UIViewControllerExtension.swift */,
+				02CC355D1DC1E96600C25017 /* Icons_Images */,
+				02CC355C1DC1E93900C25017 /* PagingController */,
 				8B6FF6B31DC1C99100568144 /* video.mov */,
-				8BEFDFBB1DC0C0D9009BCF08 /* twitter.png */,
-				8BEFDFB91DC0C00E009BCF08 /* google-plus.png */,
-				8BEFDFB71DC0BD66009BCF08 /* GooglePlus.jpeg */,
-				8BEFDFB51DC0BAB7009BCF08 /* facebook.png */,
 				8BEFDFB31DC0B6C6009BCF08 /* Back.png */,
-				8B6FF6A31DC1C90B00568144 /* IOPBondsFDController.swift */,
 				0209FA4E1DC084A600AE1EDD /* AppDelegate.swift */,
 				8BEFDFBD1DC0C7E6009BCF08 /* LoginViewController.swift */,
 				0209FA501DC084A600AE1EDD /* ViewController.swift */,
@@ -140,6 +129,42 @@
 				0209FA551DC084A600AE1EDD /* StockHolding.xcdatamodeld */,
 			);
 			path = StockHolding;
+			sourceTree = "<group>";
+		};
+		02CC355C1DC1E93900C25017 /* PagingController */ = {
+			isa = PBXGroup;
+			children = (
+				8B6FF6A31DC1C90B00568144 /* IOPBondsFDController.swift */,
+				8B6FF6AB1DC1C99100568144 /* IPOViewController.swift */,
+				8B6FF6A81DC1C99100568144 /* FDViewController.swift */,
+				8B6FF6A51DC1C99100568144 /* BondsViewController.swift */,
+				8B6FF6A61DC1C99100568144 /* ContentView.swift */,
+				8B6FF6AE1DC1C99100568144 /* ScrollPageView.swift */,
+				8B6FF6AF1DC1C99100568144 /* ScrollSegmentView.swift */,
+				8B6FF6B01DC1C99100568144 /* SegmentStyle.swift */,
+				8B6FF6B21DC1C99100568144 /* UIViewControllerExtension.swift */,
+			);
+			name = PagingController;
+			sourceTree = "<group>";
+		};
+		02CC355D1DC1E96600C25017 /* Icons_Images */ = {
+			isa = PBXGroup;
+			children = (
+				02CC355E1DC1E99900C25017 /* back.png */,
+				02CC355F1DC1E99900C25017 /* back@2x.png */,
+				02CC35601DC1E99900C25017 /* back@3x.png */,
+				8BEFDFBB1DC0C0D9009BCF08 /* twitter.png */,
+				8BEFDFB91DC0C00E009BCF08 /* google-plus.png */,
+				8BEFDFB71DC0BD66009BCF08 /* GooglePlus.jpeg */,
+				8BEFDFB51DC0BAB7009BCF08 /* facebook.png */,
+				8B6FF6A71DC1C99100568144 /* demat.png */,
+				8B6FF6A91DC1C99100568144 /* gold_rush.png */,
+				8B6FF6AA1DC1C99100568144 /* ipo.png */,
+				8B6FF6AC1DC1C99100568144 /* mutual_fund.png */,
+				8B6FF6AD1DC1C99100568144 /* nps.png */,
+				8B6FF6B11DC1C99100568144 /* services.png */,
+			);
+			name = Icons_Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -204,15 +229,18 @@
 				8BEFDFB41DC0B6C6009BCF08 /* Back.png in Resources */,
 				8BEFDFBC1DC0C0D9009BCF08 /* twitter.png in Resources */,
 				8B6FF6BB1DC1C99100568144 /* mutual_fund.png in Resources */,
+				02CC35621DC1E99900C25017 /* back@2x.png in Resources */,
 				8BEFDFBA1DC0C00E009BCF08 /* google-plus.png in Resources */,
 				0209FA5C1DC084A600AE1EDD /* LaunchScreen.storyboard in Resources */,
 				8BEFDFB81DC0BD66009BCF08 /* GooglePlus.jpeg in Resources */,
 				8B6FF6B81DC1C99100568144 /* gold_rush.png in Resources */,
+				02CC35631DC1E99900C25017 /* back@3x.png in Resources */,
 				8B6FF6B91DC1C99100568144 /* ipo.png in Resources */,
 				8BEFDFB61DC0BAB7009BCF08 /* facebook.png in Resources */,
 				0209FA591DC084A600AE1EDD /* Assets.xcassets in Resources */,
 				8B6FF6BC1DC1C99100568144 /* nps.png in Resources */,
 				8B6FF6B61DC1C99100568144 /* demat.png in Resources */,
+				02CC35611DC1E99900C25017 /* back.png in Resources */,
 				0209FA541DC084A600AE1EDD /* Main.storyboard in Resources */,
 				8B6FF6C21DC1C99100568144 /* video.mov in Resources */,
 				8B6FF6C01DC1C99100568144 /* services.png in Resources */,

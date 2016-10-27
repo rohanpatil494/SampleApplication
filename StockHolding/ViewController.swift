@@ -96,6 +96,7 @@ class ViewController: UIViewController {
 
     @IBAction func LogInViewAction(sender: AnyObject)
     {
+        moviePlayer.view.removeFromSuperview()
         let loginController = self.storyboard?.instantiateViewControllerWithIdentifier("Login_View") as! LoginViewController
         self.navigationController?.pushViewController(loginController, animated: true)
     }
