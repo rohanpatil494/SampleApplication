@@ -82,6 +82,7 @@
 				0209FA4E1DC084A600AE1EDD /* AppDelegate.swift */,
 				8BEFDFBD1DC0C7E6009BCF08 /* LoginViewController.swift */,
 				0209FA501DC084A600AE1EDD /* ViewController.swift */,
+				0209FA971DC0EF8D00AE1EDD /* LoginViewController.swift */,
 				0209FA671DC0A06600AE1EDD /* DashboardViewController.swift */,
 				0209FA631DC09F1B00AE1EDD /* CustomCollectionViewLayout.swift */,
 				0209FA641DC09F1B00AE1EDD /* CustomCollectionViewCell.swift */,
@@ -92,6 +93,29 @@
 				0209FA551DC084A600AE1EDD /* StockHolding.xcdatamodeld */,
 			);
 			path = StockHolding;
+			sourceTree = "<group>";
+		};
+		0209FA6B1DC0C0C800AE1EDD /* PageViewLib */ = {
+			isa = PBXGroup;
+			children = (
+				0209FA6C1DC0C0DF00AE1EDD /* ContentView.swift */,
+				0209FA6D1DC0C0DF00AE1EDD /* UIViewControllerExtension.swift */,
+				0209FA6E1DC0C0DF00AE1EDD /* ScrollPageView.swift */,
+				0209FA6F1DC0C0DF00AE1EDD /* ScrollSegmentView.swift */,
+				0209FA701DC0C0DF00AE1EDD /* SegmentStyle.swift */,
+			);
+			name = PageViewLib;
+			sourceTree = "<group>";
+		};
+		0209FA781DC0C55B00AE1EDD /* IPOPageView */ = {
+			isa = PBXGroup;
+			children = (
+				0209FA761DC0C13200AE1EDD /* IOPBondsFDController.swift */,
+				0209FA791DC0C58400AE1EDD /* IPOViewController.swift */,
+				0209FA7B1DC0C59900AE1EDD /* BondsViewController.swift */,
+				0209FA7D1DC0C5A300AE1EDD /* FDViewController.swift */,
+			);
+			name = IPOPageView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +150,7 @@
 				TargetAttributes = {
 					0209FA4A1DC084A600AE1EDD = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = RDY9UBLMJ8;
 					};
 				};
 			};
@@ -159,7 +184,13 @@
 				8BEFDFB81DC0BD66009BCF08 /* GooglePlus.jpeg in Resources */,
 				8BEFDFB61DC0BAB7009BCF08 /* facebook.png in Resources */,
 				0209FA591DC084A600AE1EDD /* Assets.xcassets in Resources */,
+				0209FA9E1DC0F19800AE1EDD /* twitter.png in Resources */,
+				0209FA901DC0E21F00AE1EDD /* services.png in Resources */,
+				0209FA951DC0EC6F00AE1EDD /* back@2x.png in Resources */,
+				0209FA941DC0EC6F00AE1EDD /* back.png in Resources */,
+				0209FA8F1DC0E21F00AE1EDD /* nps.png in Resources */,
 				0209FA541DC084A600AE1EDD /* Main.storyboard in Resources */,
+				0209FA8E1DC0E21F00AE1EDD /* mutual_fund.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -173,9 +204,19 @@
 				8BEFDFBE1DC0C7E6009BCF08 /* LoginViewController.swift in Sources */,
 				0209FA511DC084A600AE1EDD /* ViewController.swift in Sources */,
 				0209FA681DC0A06600AE1EDD /* DashboardViewController.swift in Sources */,
+				0209FA711DC0C0DF00AE1EDD /* ContentView.swift in Sources */,
+				0209FA7E1DC0C5A300AE1EDD /* FDViewController.swift in Sources */,
 				0209FA661DC09F1B00AE1EDD /* CustomCollectionViewCell.swift in Sources */,
+				0209FA721DC0C0DF00AE1EDD /* UIViewControllerExtension.swift in Sources */,
+				0209FA7C1DC0C59900AE1EDD /* BondsViewController.swift in Sources */,
 				0209FA4F1DC084A600AE1EDD /* AppDelegate.swift in Sources */,
 				0209FA651DC09F1B00AE1EDD /* CustomCollectionViewLayout.swift in Sources */,
+				0209FA741DC0C0DF00AE1EDD /* ScrollSegmentView.swift in Sources */,
+				0209FA751DC0C0DF00AE1EDD /* SegmentStyle.swift in Sources */,
+				0209FA771DC0C13200AE1EDD /* IOPBondsFDController.swift in Sources */,
+				0209FA981DC0EF8D00AE1EDD /* LoginViewController.swift in Sources */,
+				0209FA7A1DC0C58400AE1EDD /* IPOViewController.swift in Sources */,
+				0209FA731DC0C0DF00AE1EDD /* ScrollPageView.swift in Sources */,
 				0209FA571DC084A600AE1EDD /* StockHolding.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -291,10 +332,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = StockHolding/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hgsinteractive.StockHolding;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "9d3eec96-cb31-41f6-9177-1debc9b190fd";
 			};
 			name = Debug;
 		};
@@ -302,10 +345,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = StockHolding/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hgsinteractive.StockHolding;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "9d3eec96-cb31-41f6-9177-1debc9b190fd";
 			};
 			name = Release;
 		};

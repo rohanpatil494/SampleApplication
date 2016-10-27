@@ -15,7 +15,7 @@ class CustomCollectionViewCell: UICollectionViewCell
     @IBOutlet var nameLabel: UILabel!
     let boundss = UIScreen.mainScreen().bounds
     //var moduleStaticRef:NSString!
-    //var moduleId:NSString!
+    //var moduleId:NSString!//
    
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -24,12 +24,15 @@ class CustomCollectionViewCell: UICollectionViewCell
         self.nameLabel.translatesAutoresizingMaskIntoConstraints = true
         self.moduleIcon.translatesAutoresizingMaskIntoConstraints = true
         
+        print(boundss.size.width/4)
+        print(boundss.size.height/4)
         
-        self.imgUser.frame=CGRectMake(0, 0, ((boundss.size.width/2)-10), ((boundss.size.height/3)-10))
+       // self.imgUser.frame=CGRectMake(0, 0, ((boundss.size.width/2)-30), ((boundss.size.height/4)-10))
         
         if boundss.size.width > 340
         {
-            self.nameLabel.frame=CGRectMake(0, ((boundss.size.width/2)-10), ((boundss.size.width/2)-10), 40)
+            self.imgUser.frame = CGRectMake(5, 7, 170, 202)
+            self.nameLabel.frame=CGRectMake(0, ((boundss.size.width/2)-25), ((boundss.size.width/2)-10), 40)
             self.moduleIcon.frame=CGRectMake((((boundss.size.width-20)/2)-120)/2, 30, 120, 120)
         }
         else if boundss.size.width < 330
@@ -43,13 +46,13 @@ class CustomCollectionViewCell: UICollectionViewCell
         }
         
         
-         imgUser.frame = CGRectMake(0, 0, boundss.size.width, boundss.size.height)
+       //  imgUser.frame = CGRectMake(2, 2, boundss.size.width-4, boundss.size.height-4)
         
         
-//        imgUser.layer.shadowColor = UIColor.blackColor().CGColor
-//        imgUser.layer.shadowOpacity = 0.5
-//        imgUser.layer.shadowOffset = CGSizeZero
-//        imgUser.layer.shadowRadius = 2
+        imgUser.layer.shadowColor = UIColor.blackColor().CGColor
+        imgUser.layer.shadowOpacity = 0.5
+        imgUser.layer.shadowOffset = CGSizeZero
+        imgUser.layer.shadowRadius = 2
         
         
         // Initialization code

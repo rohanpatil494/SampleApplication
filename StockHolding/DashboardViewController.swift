@@ -11,13 +11,13 @@ import UIKit
 class DashboardViewController: UIViewController {
     
     var titleArray = ["Demat","Mutual Funds","National Pension Scheme","IPO / Bonds / FD","Gold Rush","Services"]
-    //var imagesArray = ["a.png","b.png","c.png","d.png"]
+    var imagesArray = ["demat.png","mutual_fund.png","nps.png","ipo.png","gold_rush.png","services.png"]
     var timer = NSTimer()
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var indicator: UIActivityIndicatorView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        //
         createNavigationBar()
     }
     
@@ -43,10 +43,10 @@ class DashboardViewController: UIViewController {
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier("Cell", forIndexPath: indexPath) as! CustomCollectionViewCell
         
-        //cell.moduleIcon.image = UIImage(named: imagesArray[indexPath.row])
-        cell.moduleIcon.backgroundColor = UIColor.blueColor()
+        cell.moduleIcon.image = UIImage(named: imagesArray[indexPath.row])
+        cell.moduleIcon.backgroundColor = UIColor.clearColor()
         cell.nameLabel.text = titleArray[indexPath.row]
-        
+        //
         
         return cell
     }
@@ -76,6 +76,11 @@ class DashboardViewController: UIViewController {
 //            timer = NSTimer.scheduledTimerWithTimeInterval(9.0, target: self, selector: #selector(HomeViewController.someSelector), userInfo: nil, repeats: false)
             //timer.fire()
             
+        }
+        else if indexPath.row == 3
+        {
+            let IPOBondsFDController = self.storyboard?.instantiateViewControllerWithIdentifier("IPOBondsFD_View") as! IOPBondsFDController
+            self.navigationController?.pushViewController(IPOBondsFDController, animated: true)
         }
         else
         {
