@@ -18,7 +18,35 @@ class ViewController: UIViewController {
     
     override func viewWillAppear(animated: Bool) {
         self.navigationController?.navigationBarHidden = true
+        
+        backView.backgroundColor = UIColor.clearColor()
+        
+        if let path = NSBundle.mainBundle().pathForResource("video", ofType: "mov") {
+            let url = NSURL(fileURLWithPath: path)
+            moviePlayer = MPMoviePlayerController(contentURL: url)
+        }
+        else {
+            print("Oops, something wrong when playing video.mp4")
+        }
+        
+        moviePlayer.movieSourceType = MPMovieSourceType.File
+        moviePlayer.view.frame = self.view.bounds
+        moviePlayer.scalingMode = MPMovieScalingMode.None
+        moviePlayer.controlStyle = MPMovieControlStyle.None
+        moviePlayer.shouldAutoplay = true
+        moviePlayer.view.backgroundColor = UIColor.whiteColor()
+        self.view.addSubview(moviePlayer.view)
+        self.view.sendSubviewToBack(moviePlayer.view)
+        
+        moviePlayer.prepareToPlay()
+        moviePlayer.play()
+        
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(ViewController.playerPlaybackDidFinish(_:)),
+                                                         name: MPMoviePlayerPlaybackDidFinishNotification, object: nil)
+        
+        
     }
+    
     override func viewWillDisappear(animated: Bool) {
         self.navigationController?.navigationBarHidden = false
     }
@@ -38,34 +66,14 @@ class ViewController: UIViewController {
         
        // NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: "updatePlaybackTime:", userInfo: nil, repeats: true)
         //
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(ViewController.playerPlaybackDidFinish(_:)),
-                                                         name: MPMoviePlayerPlaybackDidFinishNotification, object: nil)
+        
        // NSNotificationCenter.defaultCenter() .addObserver(self, selector: "movieOrientationChanged", name: UIDeviceOrientationDidChangeNotification, object: nil)
     }
     
     override func viewDidAppear(animated: Bool) {
-        
-        if let path = NSBundle.mainBundle().pathForResource("video", ofType: "mov") {
-            let url = NSURL(fileURLWithPath: path)
-            moviePlayer = MPMoviePlayerController(contentURL: url)
-        }
-        else {
-            print("Oops, something wrong when playing video.mp4")
-        }
-        
-        moviePlayer.movieSourceType = MPMovieSourceType.File
-        moviePlayer.view.frame = backView.bounds
-        moviePlayer.scalingMode = MPMovieScalingMode.None
-        moviePlayer.controlStyle = MPMovieControlStyle.None
-        moviePlayer.shouldAutoplay = true
-        moviePlayer.view.backgroundColor = UIColor.whiteColor()
-        backView.addSubview(moviePlayer.view)
-        backView.sendSubviewToBack(moviePlayer.view)
-        
-        moviePlayer.prepareToPlay()
-        moviePlayer.play()
-
     }
+    
+        
     
     func playerPlaybackDidFinish(notification:NSNotification)
     {

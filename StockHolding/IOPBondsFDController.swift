@@ -33,7 +33,7 @@ class IOPBondsFDController: UIViewController {
         self.navigationItem.setHidesBackButton(true, animated: false)
         self.title = "IOP / Bonds / Fix Deposit"
         self.navigationController!.navigationBar.titleTextAttributes = [NSFontAttributeName: UIFont(name: "Helvetica", size: 22)! , NSForegroundColorAttributeName:UIColor.whiteColor()]
-        self.navigationController?.navigationBar.barTintColor = UIColor(red: 64/255.0, green: 111/255.0, blue: 214/255.0, alpha: 1.0)
+        self.navigationController?.navigationBar.barTintColor = UIColor(red: 0/255.0, green: 110/255.0, blue: 186/255.0, alpha: 1.0)
         // ---- Back Button ----- //
         let btnBack = UIButton(type: UIButtonType.Custom)
         btnBack.setImage(UIImage(named: "back.png"), forState: UIControlState.Normal)
