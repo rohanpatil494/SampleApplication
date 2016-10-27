@@ -69,7 +69,7 @@ public struct SegmentStyle {
     public var changeContentAnimated = true
     
     public var extraBtnBackgroundImageName: String?
-    public var scrollLineHeight: CGFloat = 2
+    public var scrollLineHeight: CGFloat = 4
     public var scrollLineColor = UIColor.whiteColor()
     
     public var coverBackgroundColor = UIColor.blueColor()

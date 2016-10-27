@@ -14,10 +14,10 @@ class LoginViewController: UIViewController
     @IBOutlet weak var loginBtn: UIButton!
     
     override func viewWillAppear(animated: Bool) {
-        //self.navigationController?.navigationBarHidden = true
+        self.navigationController?.navigationBarHidden = true
     }
     override func viewWillDisappear(animated: Bool) {
-        //self.navigationController?.navigationBarHidden = false
+        self.navigationController?.navigationBarHidden = false
     }
     
     override func viewDidLoad() {
@@ -31,4 +31,9 @@ class LoginViewController: UIViewController
         //changes5
     }
 
+    @IBAction func SubmitLoginAction(sender: AnyObject)
+    {
+        let dashboardController = self.storyboard?.instantiateViewControllerWithIdentifier("Dashboard_View") as! DashboardViewController
+        self.navigationController?.pushViewController(dashboardController, animated: true)
+    }
 }
