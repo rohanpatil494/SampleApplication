@@ -545,7 +545,7 @@
                                     <constraint firstAttribute="height" constant="40" id="0wS-tu-hHv"/>
                                 </constraints>
                                 <inset key="contentEdgeInsets" minX="9" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                <state key="normal" title="IDFC  ltd">
+                                <state key="normal" title="IDFC  ltd EQ">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
@@ -556,7 +556,7 @@
                                     <constraint firstAttribute="height" constant="40" id="MfL-K9-BHI"/>
                                 </constraints>
                                 <inset key="contentEdgeInsets" minX="9" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                <state key="normal" title="L&amp;T Intrastruct SR 1">
+                                <state key="normal" title="L&amp;T Intrastruct SR-1">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
@@ -730,7 +730,7 @@
                                     <constraint firstAttribute="height" constant="40" id="3eD-03-OUI"/>
                                 </constraints>
                                 <inset key="contentEdgeInsets" minX="9" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                <state key="normal" title="L&amp;T Intrastruct SR 1">
+                                <state key="normal" title="L&amp;T Intrastruct SR-1">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
@@ -802,7 +802,7 @@
                                     <constraint firstAttribute="height" constant="40" id="SQD-DM-gSn"/>
                                 </constraints>
                                 <inset key="contentEdgeInsets" minX="9" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                <state key="normal" title="IDFC Bank Pvt Ltd">
+                                <state key="normal" title="Bajaj">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
@@ -813,7 +813,7 @@
                                     <constraint firstAttribute="height" constant="40" id="yd2-jx-5jp"/>
                                 </constraints>
                                 <inset key="contentEdgeInsets" minX="9" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                <state key="normal" title="IDFC  ltd">
+                                <state key="normal" title="CBHFL">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
@@ -824,7 +824,7 @@
                                     <constraint firstAttribute="height" constant="40" id="c4J-lb-gia"/>
                                 </constraints>
                                 <inset key="contentEdgeInsets" minX="9" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                <state key="normal" title="L&amp;T Intrastruct SR 1">
+                                <state key="normal" title="LIC HFL">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
