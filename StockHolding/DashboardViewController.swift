@@ -27,7 +27,7 @@ class DashboardViewController: UIViewController {
         self.title = "SHCIL Products"
         
         self.navigationController!.navigationBar.titleTextAttributes = [NSFontAttributeName: UIFont(name: "Helvetica", size: 22)! , NSForegroundColorAttributeName:UIColor.whiteColor()]
-        self.navigationController?.navigationBar.barTintColor = UIColor(red: 64/255.0, green: 111/255.0, blue: 214/255.0, alpha: 1.0)
+        self.navigationController?.navigationBar.barTintColor = UIColor(red: 0/255.0, green: 110/255.0, blue: 186/255.0, alpha: 1.0)
         
         
     }
