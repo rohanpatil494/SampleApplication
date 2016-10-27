@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="nTm-kX-W4F">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="nTm-kX-W4F">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -122,7 +122,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iew-TR-HwU">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iew-TR-HwU">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="LOG IN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1bN-Mb-sc3">
@@ -132,12 +132,15 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gvf-gf-oOe">
-                                        <rect key="frame" x="7" y="14" width="43" height="21"/>
+                                        <rect key="frame" x="7" y="14" width="43" height="28"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="43" id="Cch-CF-gi1"/>
-                                            <constraint firstAttribute="height" constant="21" id="XZL-0q-xTv"/>
+                                            <constraint firstAttribute="height" constant="28" id="XZL-0q-xTv"/>
                                         </constraints>
-                                        <state key="normal" image="Back.png"/>
+                                        <state key="normal" image="back.png"/>
+                                        <connections>
+                                            <action selector="backView:" destination="mGs-7D-mzj" eventType="touchUpInside" id="a6X-cn-mr7"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -147,7 +150,7 @@
                                     <constraint firstItem="Gvf-gf-oOe" firstAttribute="top" secondItem="iew-TR-HwU" secondAttribute="top" constant="14" id="F9h-H1-OTO"/>
                                     <constraint firstItem="1bN-Mb-sc3" firstAttribute="centerX" secondItem="iew-TR-HwU" secondAttribute="centerX" id="JGp-m2-3wk"/>
                                     <constraint firstAttribute="height" constant="50" id="Knj-hN-l10"/>
-                                    <constraint firstAttribute="bottom" secondItem="Gvf-gf-oOe" secondAttribute="bottom" constant="15" id="a8L-3F-Nek"/>
+                                    <constraint firstAttribute="bottom" secondItem="Gvf-gf-oOe" secondAttribute="bottom" constant="8" id="a8L-3F-Nek"/>
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lIf-NX-rCd">
@@ -196,7 +199,10 @@
                                     <constraint firstAttribute="height" constant="42" id="om8-aa-kLZ"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                                <connections>
+                                    <outlet property="delegate" destination="mGs-7D-mzj" id="clZ-K9-pZv"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ql5-hA-REy">
                                 <rect key="frame" x="41" y="394" width="250" height="42"/>
@@ -205,7 +211,10 @@
                                     <constraint firstAttribute="height" constant="42" id="FKm-tT-4v0"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="mGs-7D-mzj" id="3qJ-CW-hc8"/>
+                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tfW-2i-War">
                                 <rect key="frame" x="41" y="478" width="250" height="41"/>
@@ -861,7 +870,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Back.png" width="32" height="32"/>
+        <image name="back.png" width="32" height="32"/>
         <image name="facebook.png" width="32" height="32"/>
         <image name="google-plus.png" width="32" height="32"/>
         <image name="twitter.png" width="32" height="32"/>

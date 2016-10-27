@@ -37,4 +37,8 @@ class LoginViewController: UIViewController
         let dashboardController = self.storyboard?.instantiateViewControllerWithIdentifier("Dashboard_View") as! DashboardViewController
         self.navigationController?.pushViewController(dashboardController, animated: true)
     }
+    @IBAction func backView(sender: AnyObject) {
+        self.navigationController?.popViewControllerAnimated(true)
+    }
+    
 }
